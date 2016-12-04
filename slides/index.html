@@ -1828,6 +1828,271 @@ function createFavorite() {
                         </code></pre>
                     </section>
                 </section>
+                <section style="background-color:#90CAF9;">
+                    <section>
+                        <header>
+                            <h2>Time to style our Favorites page</h2>
+                        </header>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Font</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Start simple by changing making the font <em>sans-serif</em></p>
+                            <p>Add the new stuff below into your <em>style</em> element, which is
+                                a child of your <em>head</em> element</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Add this new stuff */
+        body {
+            font-family: sans-serif;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Navigation</h3>
+                        </header>
+                            <div style="text-align:left;">
+                                <p>Let's make our navigation look a little more modern and stylish.</p>
+                                <p>First, let's get rid of the "bullet points".</p>
+                                <p>Add the new stuff below into your <em>style</em> element.</p>
+                            </div>
+                            <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #navigation ul {
+            list-style: none;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                            </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Navigation</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Next, let's let the two navigation links sit side-by-side.</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #navigation ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Navigation</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Let's have our <em>&lt;h1&gt;</em> navigation heading and our
+                                navigation links sit right next to each other, and use a border
+                                to visually separate them from the rest of the page.</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #navigation {
+            height: 80px;
+            border-bottom: 1px solid gray;
+        }
+
+        #navigation header {
+            float: left;
+        }
+
+        #navigation nav {
+            float: right;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Navigation</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Let's make our navigation links look a little more stylish by
+                                removing the underlines, and having our "active" link look active</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #navigation ul li a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        #navigation ul li.active a {
+            color: red;
+            font-weight: bold;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Controls</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>The black borders around our controls fieldsets are a bit much.
+                            Let's get rid of them.</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #controls fieldset {
+            border: none;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Controls</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>But now there's not enough visual separation between our controls
+                            and our list of favorites. Let's try this:</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #controls {
+            background: #eee;
+            padding: 15px;
+            border-left: 5px solid black;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Controls</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Our form labels aren't lined up with each other, and we can 
+                                make them look a bit more stylish and clear by doing this:</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #controls label {
+            display: block;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Content</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Finally, let's center our favorites:</p>
+                        </div>
+                        <pre><code>
+&lt;head&gt;                                
+    &lt;style type="text/css"&gt;                                
+        /* Old stuff here */
+
+        /* Add this new stuff */
+        #content article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    &lt;/style&gt;                                
+&lt;/head&gt;                                
+                        </code></pre>
+                    </section>
+
+                </section>
+                <section data-background-color="#FCE4EC">
+                    <section>
+                        <header>
+                            <h2>Save and Publish our Work!</h2>
+                        </header>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Save our code changes to GitHub</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Let's save our Cloud 9 work back to GitHub,
+                                and publish it!</p>
+                            <p>Type Ctrl-s on all your files.</p>
+                            <p>Open a Cloud 9 Terminal by typing Alt-T.</p>
+                            <p>Type the following and hit Enter:</p>
+                            <pre><code>./bin/save.sh</code></pre>
+                            <p>Go to your GitHub repo to see your changes!</p>
+                        </div>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Publish our code to a website</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>Go to your Chicktech repo in GitHub.</p>
+                            <p>Mine is <a href="github.com/maxenglander/ChickTechWebDevDec2016" target="_blank">github.com/maxenglander/ChickTechWebDevDec2016</a>.</p>
+                            <p>You'll have to change "maxenglander" to your GitHub username.</p>
+                            <p>Click the Settings link on the right.</p>
+                            <p>Look for GitHub Pages section.</p>
+                            <p>Set Source to "master branch" and click Save.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Admire your work</h3>
+                        </header>
+                        <div style="text-align:left;">
+                            <p>You can now see and share your work.</p>
+                            <p>My site is <a href="maxenglander.github.io/ChicktechWebDevDec2016/favorites.html" target="_blank">maxenglander.github.io/ChicktechWebDevDec2016/favorites.html</a>.</p>
+                            <p>Yours will be similar - just change "maxenglander" to your GitHub username.</p>
+                        </div>
+                    </section>
+                </section>
 			</div>
 		</div>
 
